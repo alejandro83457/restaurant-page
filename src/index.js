@@ -1,11 +1,15 @@
+import getHeader from "./header";
 import getHomePage from "./homePage";
 import getDishesPage from "./dishesPage";
+
+// Header is the only element not wiped.
+let content = document.querySelector("#content");
+content.appendChild(getHeader());
 
 // Call initial home page.
 getHomePage();
 
 // Get elements from DOM
-let content = document.querySelector("#content");
 let homeLink = document.querySelector("#home");
 let dishesLink = document.querySelector("#dishes");
 let aboutLink = document.querySelector("#about");
@@ -31,7 +35,7 @@ aboutLink.addEventListener("click", () => {
 
 // Will remove all children on the page.
 function removeElements() {
-  while (content.firstChild) {
-    content.removeChild(content.firstChild);
+  while (content.childNodes.length > 1) {
+    content.removeChild(content.lastChild);
   }
 }
