@@ -11,6 +11,8 @@ export default function getDishesPage() {
 
 function getMain() {
   let main = document.createElement("main");
+  main.id = "main-dishes";
+  let textDiv = document.createElement("div");
   let text1 = document.createElement("p");
   let text2 = document.createElement("p");
   let text3 = document.createElement("p");
@@ -25,8 +27,9 @@ function getMain() {
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, eius nemo cum ipsa, ipsum, porro eum alias doloribus aliquam aut itaque illo dolorem quas! Inventore reprehenderit error eaque nam doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, eius nemo cum ipsa, ipsum, porro eum alias doloribus aliquam aut itaque illo dolorem quas! Inventore reprehenderit error eaque nam doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, eius nemo cum ipsa, ipsum, porro eum alias doloribus aliquam aut itaque illo dolorem quas! Inventore reprehenderit error eaque nam doloremque.";
 
   main.appendChild(img);
-  main.appendChild(text1);
-  main.appendChild(text2);
-  main.appendChild(text3);
+  textDiv.appendChild(text1);
+  textDiv.appendChild(text2);
+  textDiv.appendChild(text3);
+  main.appendChild(textDiv);
   return main;
 }

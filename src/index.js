@@ -1,6 +1,7 @@
 import getHeader from "./header";
 import getHomePage from "./homePage";
 import getDishesPage from "./dishesPage";
+import getAboutPage from "./aboutPage";
 
 // Header is the only element not wiped.
 let content = document.querySelector("#content");
@@ -30,6 +31,7 @@ dishesLink.addEventListener("click", (e) => {
 aboutLink.addEventListener("click", () => {
   console.log("About clicked");
   removeElements();
+  getAboutPage();
 });
 // ---------------------------------------------
 

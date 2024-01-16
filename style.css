@@ -46,9 +46,18 @@ main img {
   height: 700px;
 }
 
-main p {
+main div {
   width: 65%;
   text-align: center;
+}
+
+#main-dishes div {
+  display: flex;
+  gap: 1rem;
+}
+
+#main-about div {
+  width: 40%;
 }
 
 footer {
