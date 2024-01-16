@@ -24,9 +24,9 @@ function getNavBar() {
   li2.id = "dishes";
   li3.id = "about";
 
-  li1.textContent = "home";
-  li2.textContent = "dishes";
-  li3.textContent = "about";
+  li1.textContent = "Home";
+  li2.textContent = "Dishes";
+  li3.textContent = "About";
 
   ul.appendChild(li1);
   ul.appendChild(li2);

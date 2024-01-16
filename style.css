@@ -1,10 +1,12 @@
 body {
   margin: 0;
   font-size: 20px;
+  font-family: "Roboto Flex", sans-serif;
+  background-color: #0f172a;
+  color: #64748b;
 }
 
 #content {
-  background-color: lightblue;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 5fr 50fr 1fr;
@@ -12,10 +14,13 @@ body {
 }
 
 header {
-  background-color: lightcyan;
   display: flex;
   align-items: center;
   padding: 0 1rem;
+}
+
+header > h1 {
+  color: #cbd5e1;
 }
 
 header nav {
@@ -28,18 +33,24 @@ header nav ul {
   list-style: none;
 }
 
+header nav ul li:hover {
+  color: #cbd5e1;
+}
+
 header nav ul li a {
   text-decoration: none;
   color: inherit;
 }
 
 main {
-  background-color: lightgoldenrodyellow;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  padding-bottom: 1rem;
+  padding: 2rem 0;
+
+  border-top: 1px solid #1e293b;
+  border-bottom: 1px solid #1e293b;
 }
 
 main img {
@@ -49,6 +60,11 @@ main img {
 main div {
   width: 65%;
   text-align: center;
+}
+
+#main-home div {
+  display: flex;
+  flex-direction: column;
 }
 
 #main-dishes div {
@@ -61,7 +77,6 @@ main div {
 }
 
 footer {
-  background-color: lightgray;
   display: flex;
   justify-content: space-evenly;
   padding: 1rem 0;
@@ -70,4 +85,12 @@ footer {
 footer a {
   text-decoration: none;
   color: inherit;
+}
+
+footer a:hover {
+  color: #cbd5e1;
+}
+
+p {
+  line-height: 2.5rem;
 }
