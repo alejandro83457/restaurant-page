@@ -3,11 +3,11 @@ body {
   font-size: 20px;
 }
 
-#content div {
+#content > div {
   background-color: lightblue;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 15fr 1fr;
+  grid-template-rows: 5fr 50fr 1fr;
   height: 100vh;
 }
 
@@ -52,4 +52,12 @@ main p {
 
 footer {
   background-color: lightgray;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: inherit;
 }
