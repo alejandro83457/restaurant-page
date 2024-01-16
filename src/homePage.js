@@ -1,10 +1,12 @@
+import myImg from "./main-img.jpg";
+
 // Function creates the whole home page.
 export default function getHomePage() {
   let div = document.createElement("div");
-  let main = document.createElement("main");
   let footer = document.createElement("footer");
 
   let header = getHeader();
+  let main = getMain();
 
   div.appendChild(header);
   div.appendChild(main);
@@ -19,7 +21,7 @@ function getHeader() {
   let heading = document.createElement("h1");
   let nav = getNavBar();
 
-  heading.textContent = "Restaurant Name";
+  heading.textContent = "Page Name";
 
   header.appendChild(heading);
   header.appendChild(nav);
@@ -55,4 +57,26 @@ function getNavBar() {
   nav.appendChild(ul);
 
   return nav;
+}
+
+function getMain() {
+  let main = document.createElement("main");
+  let text1 = document.createElement("p");
+  let text2 = document.createElement("p");
+  let text3 = document.createElement("p");
+  let img = new Image();
+
+  img.src = myImg;
+  text1.textContent =
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, eius nemo cum ipsa, ipsum, porro eum alias doloribus aliquam aut itaque illo dolorem quas! Inventore reprehenderit error eaque nam doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, eius nemo cum ipsa, ipsum, porro eum alias doloribus aliquam aut itaque illo dolorem quas! Inventore reprehenderit error eaque nam doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, eius nemo cum ipsa, ipsum, porro eum alias doloribus aliquam aut itaque illo dolorem quas! Inventore reprehenderit error eaque nam doloremque.";
+  text2.textContent =
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, eius nemo cum ipsa, ipsum, porro eum alias doloribus aliquam aut itaque illo dolorem quas! Inventore reprehenderit error eaque nam doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, eius nemo cum ipsa, ipsum, porro eum alias doloribus aliquam aut itaque illo dolorem quas! Inventore reprehenderit error eaque nam doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, eius nemo cum ipsa, ipsum, porro eum alias doloribus aliquam aut itaque illo dolorem quas! Inventore reprehenderit error eaque nam doloremque.";
+  text3.textContent =
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, eius nemo cum ipsa, ipsum, porro eum alias doloribus aliquam aut itaque illo dolorem quas! Inventore reprehenderit error eaque nam doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, eius nemo cum ipsa, ipsum, porro eum alias doloribus aliquam aut itaque illo dolorem quas! Inventore reprehenderit error eaque nam doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, eius nemo cum ipsa, ipsum, porro eum alias doloribus aliquam aut itaque illo dolorem quas! Inventore reprehenderit error eaque nam doloremque.";
+
+  main.appendChild(img);
+  main.appendChild(text1);
+  main.appendChild(text2);
+  main.appendChild(text3);
+  return main;
 }

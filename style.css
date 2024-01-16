@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-size: 20px;
 }
 
 #content div {
@@ -34,6 +35,19 @@ header nav ul li a {
 
 main {
   background-color: lightgoldenrodyellow;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+main img {
+  height: 700px;
+}
+
+main p {
+  width: 65%;
+  text-align: center;
 }
 
 footer {
