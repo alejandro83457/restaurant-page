@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+}
+
+#content div {
+  background-color: lightblue;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 15fr 1fr;
+  height: 100vh;
+}
+
+header {
+  background-color: lightcyan;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+header nav {
+  margin-left: auto;
+}
+
+header nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+main {
+  background-color: lightgoldenrodyellow;
+}
+
+footer {
+  background-color: lightgray;
+}
