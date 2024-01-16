@@ -2,7 +2,7 @@ import myImg from "./main-img.jpg";
 
 // Function creates the whole home page.
 export default function getHomePage() {
-  let div = document.createElement("div");
+  let div = document.querySelector("#content");
 
   let header = getHeader();
   let main = getMain();
@@ -11,8 +11,6 @@ export default function getHomePage() {
   div.appendChild(header);
   div.appendChild(main);
   div.appendChild(footer);
-
-  return div;
 }
 
 // Function creates the header element.
@@ -40,9 +38,10 @@ function getNavBar() {
   let a2 = document.createElement("a");
   let a3 = document.createElement("a");
 
-  a1.href = "";
-  a2.href = "";
-  a3.href = "";
+  li1.id = "home";
+  li2.id = "dishes";
+  li3.id = "about";
+
   a1.textContent = "link 1";
   a2.textContent = "link 2";
   a3.textContent = "link 3";

@@ -3,7 +3,7 @@ body {
   font-size: 20px;
 }
 
-#content > div {
+#content {
   background-color: lightblue;
   display: grid;
   grid-template-columns: 1fr;
@@ -39,6 +39,7 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  padding-bottom: 1rem;
 }
 
 main img {
